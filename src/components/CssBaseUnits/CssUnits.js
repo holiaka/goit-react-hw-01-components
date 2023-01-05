@@ -4,6 +4,7 @@ export const cssUnits = {
     sizeText: {
         sm: "12px",
         md: "16px",
+        preLg: "20px",
         lg: "24px",
     },
     bgColor: {

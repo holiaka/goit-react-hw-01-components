@@ -4,7 +4,7 @@ import user from "../data/user.json"
 export const App = () => {
   return (
     <div
-      style={{
+      style={{        
         height: '100vh',
         display: 'flex',
         justifyContent: 'center',
