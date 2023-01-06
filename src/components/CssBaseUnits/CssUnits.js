@@ -10,8 +10,8 @@ export const cssUnits = {
     color: {
         white: "#ffffff",
         lightGray: "#efefef",
-        gray: "#aba9a9",
-        darkGrey: "#aaaaa"
+        gray: "#dddddd",
+        darkGray: "#8b8989"
     },
 };
 
