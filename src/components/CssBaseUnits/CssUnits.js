@@ -7,10 +7,11 @@ export const cssUnits = {
         preLg: "20px",
         lg: "24px",
     },
-    bgColor: {
+    color: {
         white: "#ffffff",
-        lightGray: "#e3e1e1",
+        lightGray: "#efefef",
         gray: "#aba9a9",
+        darkGrey: "#aaaaa"
     },
 };
 

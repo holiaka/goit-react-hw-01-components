@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { ProfilCard, UserInformation, UserPhoto, UserName, UserTag, UserLocation, SocialData } from "./Profil.styled";
+import { ProfilCard, UserInformation, UserPhoto, UserName, UserTag, UserLocation, SocialData, SocialStatName, SocialStatValue } from "./Profil.styled";
 
 export const Profil = ({ user: { username, tag, location, avatar, stats: { followers, views, likes } } }) => {
     return (
@@ -14,18 +14,18 @@ export const Profil = ({ user: { username, tag, location, avatar, stats: { follo
                 <UserLocation>{location}</UserLocation>
             </UserInformation>
             <SocialData>
-                <li>
-                    <span>Followers</span>
-                    <span>{followers}</span>
-                </li>
-                <li>
-                    <span>Views</span>
-                    <span>{views}</span>
-                </li>
-                <li>
-                    <span>Likes</span>
-                    <span>{likes}</span>
-                </li>
+                <div>
+                    <SocialStatName>Followers</SocialStatName>
+                    <SocialStatValue>{followers}</SocialStatValue>
+                </div>
+                <div>
+                    <SocialStatName>Views</SocialStatName>
+                    <SocialStatValue>{views}</SocialStatValue>
+                </div>
+                <div>
+                    <SocialStatName>Likes</SocialStatName>
+                    <SocialStatValue>{likes}</SocialStatValue>
+                </div>
             </SocialData>
         </ProfilCard>
     )
