@@ -6,6 +6,7 @@ export const ProfilCard = styled.div`
   border-radius: ${cssUnits.borderRadius};
   font-size: ${cssUnits.sizeText.sm};
   box-shadow: 0px 0px 5px 0px rgba(170, 170, 170, 1);
+  margin-bottom: 30px;
 `;
 
 export const UserInformation = styled.div`

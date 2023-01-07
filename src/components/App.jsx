@@ -1,20 +1,28 @@
 import { Profil } from "./Profil/Profil";
-import user from "../data/user.json"
+import { Statistic } from "./Statistic/Statistic";
+import { FriendList } from "./FriendList/FriendList";
+
+import user from "../data/user.json";
+import data from "../data/data.json";
+import friends from "../data/friends.json";
+import transactions from "../data/transactions.json";
 
 export const App = () => {
   return (
     <div
       style={{     
-        backgroundColor: "#dddddd",
-        height: '100vh',
+        backgroundColor: "#dddddd",       
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
         color: '#202020'
       }}
     >
-      <Profil user = {user}/>
+      <Profil user={user} />
+      <Statistic title="Upload stats" data={data} />
+      <FriendList friends={friends} />
     </div>
   );
 };

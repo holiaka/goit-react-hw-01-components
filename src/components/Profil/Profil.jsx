@@ -13,11 +13,11 @@ import {
 
 export const Profil = ({
   user: {
-    username,
+    username ="Stranger",
     tag,
     location,
     avatar,
-    stats: { followers, views, likes },
+    stats: { followers = "No data", views = "No data", likes = "No data"},
   },
 }) => {
   return (
