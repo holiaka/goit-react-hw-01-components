@@ -3,6 +3,7 @@ export const cssUnits = {
     fullCircle: '50%',
     sizeText: {
         sm: "12px",
+        smMd: "14px",
         md: "16px",
         preLg: "20px",
         lg: "24px",
@@ -11,7 +12,8 @@ export const cssUnits = {
         white: "#ffffff",
         lightGray: "#efefef",
         gray: "#dddddd",
-        darkGray: "#8b8989"
+        darkGray: "#8b8989",
+        blue: "#00e5ff",
     },
 };
 
