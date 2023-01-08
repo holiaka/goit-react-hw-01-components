@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import { cssUnits } from "components/CssBaseUnits/CssUnits";
+import styled from 'styled-components';
+import { cssUnits } from 'components/CssBaseUnits/CssUnits';
 
-export const TransactionTable = styled.table`    
+export const TransactionTable = styled.table`
   table-layout: fixed;
   min-width: 900px;
   border-collapse: collapse;
@@ -10,38 +10,38 @@ export const TransactionTable = styled.table`
   margin-bottom: 40px;
 
   font-size: ${cssUnits.sizeText.smMd};
-    thead {        
-        border: 1px solid ${cssUnits.color.gray};
-        th {
-            padding: 16px;
-            border: 1px solid ${cssUnits.color.gray};
-            background-color: ${cssUnits.color.blue};
-            color: ${cssUnits.color.white};
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+  thead {
+    border: 1px solid ${cssUnits.color.gray};
+    th {
+      padding: 16px;
+      border: 1px solid ${cssUnits.color.gray};
+      background-color: ${cssUnits.color.blue};
+      color: ${cssUnits.color.white};
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+
+  tbody {
+    border: 1px solid ${cssUnits.color.gray};
+    color: ${cssUnits.color.darkGray};
+    tr {
+      :nth-child(odd) {
+        background-color: ${cssUnits.color.white};
+      }
+      :nth-child(even) {
+        background-color: ${cssUnits.color.lightGray};
+      }
     }
 
-    tbody {
-        border: 1px solid ${cssUnits.color.gray};
-        color: ${cssUnits.color.darkGray};
-        tr{            
-            :nth-child(odd) {
-                background-color: ${cssUnits.color.white};
-            }
-            :nth-child(even) {
-                background-color: ${cssUnits.color.lightGray};
-            }            
-        }
+    td {
+      border: 1px solid ${cssUnits.color.gray};
+      padding: 16px;
+      text-align: center;
 
-        td{
-            border: 1px solid ${cssUnits.color.gray};
-            padding: 16px;
-            text-align: center;
-
-            :first-child{
-                text-transform: capitalize;
-            }
-        }
+      :first-child {
+        text-transform: capitalize;
+      }
     }
+  }
 `;

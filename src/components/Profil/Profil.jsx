@@ -13,11 +13,11 @@ import {
 
 export const Profil = ({
   user: {
-    username ="Stranger",
+    username = 'Stranger',
     tag,
     location,
     avatar,
-    stats: { followers = "No data", views = "No data", likes = "No data"},
+    stats: { followers = 'No data', views = 'No data', likes = 'No data' },
   },
 }) => {
   return (
@@ -31,15 +31,21 @@ export const Profil = ({
       <SocialData>
         <div>
           <SocialStatName>Followers</SocialStatName>
-          <SocialStatValue>{new Intl.NumberFormat().format(followers)}</SocialStatValue>
+          <SocialStatValue>
+            {new Intl.NumberFormat().format(followers)}
+          </SocialStatValue>
         </div>
         <div>
           <SocialStatName>Views</SocialStatName>
-          <SocialStatValue>{new Intl.NumberFormat().format(views)}</SocialStatValue>
+          <SocialStatValue>
+            {new Intl.NumberFormat().format(views)}
+          </SocialStatValue>
         </div>
         <div>
           <SocialStatName>Likes</SocialStatName>
-          <SocialStatValue>{new Intl.NumberFormat().format(likes)}</SocialStatValue>
+          <SocialStatValue>
+            {new Intl.NumberFormat().format(likes)}
+          </SocialStatValue>
         </div>
       </SocialData>
     </ProfilCard>
