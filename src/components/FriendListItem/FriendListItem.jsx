@@ -4,7 +4,7 @@ import { CardWrapper, FriendAvatar, FriendName, FriendStatus,  } from "./FriendL
 export const FriendListItem = ({ friend: {avatar, name, isOnline } }) => {
     return (
         <CardWrapper>
-            <FriendStatus>&#8226;</FriendStatus>
+            <FriendStatus isOnline = {isOnline}>&#8226;</FriendStatus>
             <FriendAvatar src={avatar} alt="User avatar" width="48" />
             <FriendName>{name}</FriendName>
         </CardWrapper>
@@ -12,10 +12,10 @@ export const FriendListItem = ({ friend: {avatar, name, isOnline } }) => {
 }
 
 FriendListItem.propTypes = {
-    friend: PropTypes.exact({
+    friend: PropTypes.shape({
         avatar: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
-        isOnline: PropTypes.oneOf(['true', 'false'])
+        isOnline: PropTypes.bool.isRequired,
     }).isRequired,
 }
 
