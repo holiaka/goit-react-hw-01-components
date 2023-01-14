@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { cssUnits } from 'components/CssBaseUnits/CssUnits';
 
-export const CardWrapper = styled.div`
+export const CardWrapper = styled.li`
   min-width: 200px;
   background-color: ${cssUnits.color.white};
   box-shadow: 0px 3px 5px 0px rgba(170, 170, 170, 1);

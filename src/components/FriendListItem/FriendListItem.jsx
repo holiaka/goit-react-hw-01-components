@@ -6,7 +6,7 @@ import {
   FriendStatus,
 } from './FriendListItem.styled';
 
-export const FriendListItem = ({ friend: { avatar, name, isOnline } }) => {
+export const FriendListItem = ({ friend: { id, avatar, name, isOnline } }) => {
   return (
     <CardWrapper>
       <FriendStatus isOnline={isOnline}>&#8226;</FriendStatus>
@@ -17,7 +17,7 @@ export const FriendListItem = ({ friend: { avatar, name, isOnline } }) => {
 };
 
 FriendListItem.propTypes = {
-  friend: PropTypes.shape({
+  friend: PropTypes.shape({    
     avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     isOnline: PropTypes.bool.isRequired,

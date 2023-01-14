@@ -12,7 +12,7 @@ import { getRandomColor } from './RandomColorGenerator';
 export const Statistic = ({ title, data }) => {
   return (
     <StatisticBashboard>
-      {(title = true && <SectionTitle>{title}</SectionTitle>)}
+      {(title && <SectionTitle>{title}</SectionTitle>)}
       <StatInformation>
         {data.map(item => (
           <StatParameters
